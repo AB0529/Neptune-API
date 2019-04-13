@@ -1,0 +1,25 @@
+{
+  "name": "most-api-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Moist",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "color": "^3.1.0",
+    "colors": "^1.3.3",
+    "curl": "^0.1.4",
+    "express": "^4.16.4",
+    "express-rate-limit": "^3.4.0",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "youtube-playlist-info": "^1.1.2",
+    "youtube-search": "^1.1.4"
+  }
+}
