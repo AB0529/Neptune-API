@@ -3,6 +3,7 @@ const express = require('express');
 const curl = require('curl');
 const mysql = require('mysql');
 const rateLimit = require('express-rate-limit');
+const multer = require('multer');
 const fs = require('fs');
 const colors = require('colors');
 const Util = require('./Classes/Util.js');
@@ -34,6 +35,7 @@ connection.on('error', function(err) {
 // Express
 const app = express();
 const port = 8080;
+const upload = multer();
 
 // Rate limit
 // app.enable('trust proxy');
@@ -41,11 +43,6 @@ app.use(rateLimit({
 	windowMs: 25 * 60 * 1000,
 	max: 100
 }));
-
-// app.use(require('body-parser').urlencoded({
-// 	extended: true
-// }));
-// app.use(require('body-parser').json());
 
 // API Routs
 let routs = fs.readdirSync(`./Routs/`);
@@ -62,6 +59,9 @@ try {
 		}
 		else if (rout.type == 'POST') {
 			app.post(`/api/${file.replace(/\.js$/, '')}`, (req, res) => require(`./Routs/${file}`).run(req, res, client));
+		}
+		else if (rout.type == 'POSTY') {
+			app.post(`/api/${file.replace(/\.js$/, '')}`, upload.single('d'), (req, res) => require(`./Routs/${file}`).run(req, res, client));
 		}
 
 	});
