@@ -2,7 +2,7 @@
 
 API used for various routs such as YouTube and ShareX. Used in [Neptune-API-Wrapper](https://www.npmjs.com/package/neptune-api-wrapper)
 
-## Getting Started
+### Getting Started
 
 * Download the repository
 * Install the dependencies via `npm i`
@@ -11,22 +11,21 @@ API used for various routs such as YouTube and ShareX. Used in [Neptune-API-Wrap
 
 ```
 NodeJS version 8.x or higher
+MySQL
 ```
 
 ### Installing
 
 
-Install the dependencies
+* Make a copy of `config.json.sample` and remove the `.sample` extension
 
-```
-npm i
-```
+## Getting your API key
+* Go to `localhost:8080/generateKey?key=Xa165njaYcQ-HuSeiZ6LXYfSp&name=YOURNAME`
 
-Run the program
 
-```
-node server.js
-```
+Once you have created a new key, copy `encrypyedKey` and replace `adminKey` in `config.json` with this new key.
+
+You must now use this key for creating new keys in the future.
 
 ### Routes
 
