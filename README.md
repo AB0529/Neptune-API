@@ -18,8 +18,10 @@ MySQL
 
 
 * Make a copy of `config.json.sample` and remove the `.sample` extension
+* Fill in the MySQL details, and the Google API key, then run the app via `node server.js`, now follow as bellow
 
 ## Getting your API key
+* Make sure you generate a good, long, random string and replace `secret` in `config.json` with this string
 * Go to `localhost:8080/generateKeys?key=1&name=YOURNAME`
 
 
