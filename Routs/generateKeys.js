@@ -1,5 +1,5 @@
 module.exports.run = (req, res, client) => {
-	if (client.util.hasKey(req.query.key) !== client.config.adminKey)
+	if (client.util.hasKey(req.query.key) !== client.config.adminKey && client.cofnig.firstTimeRun == "no")
 		return res.json({
 			status: 401,
 			state: 'fail',
