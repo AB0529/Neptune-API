@@ -20,10 +20,10 @@ MySQL
 * Make a copy of `config.json.sample` and remove the `.sample` extension
 
 ## Getting your API key
-* Go to `localhost:8080/generateKeys?key=Xa165njaYcQ-HuSeiZ6LXYfSp&name=YOURNAME`
+* Go to `localhost:8080/generateKeys?key=1&name=YOURNAME`
 
 
-Once you have created a new key, copy `hash` and replace `adminKey` in `config.json` with this new key.
+Once you have created a new key, copy `hash` and replace `adminKey` in `config.json` with this new key and change `firstTimeRun` to `"no"`.
 
 You must now use this key for creating new keys in the future.
 
