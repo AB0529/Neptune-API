@@ -1,0 +1,20 @@
+{
+
+  "mysql": {
+    "host": "HOST",
+    "user": "USER",
+    "password": "PASSWORD",
+    "database": "DATABASE"
+  },
+  "google": {
+    "key": "KEY"
+  },
+  "secret": "ENTER A LONG AND COMPLEX RANDOM STRING HERE",
+  "adminKey": "OF6H8gickB2BekC7H9KE0O7H7Tq8Ah2mtcFoTJd/38w=", // CHANGE THIS AFTER GENERATING YOUR NEW KEY
+  "sharex": {
+    "key": "KEY",
+    "path": "PATH",
+    "url": "URL"
+  }
+
+}
