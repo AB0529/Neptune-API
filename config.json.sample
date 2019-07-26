@@ -1,5 +1,5 @@
 {
-
+  "firstTimeRun": "yes", // CHANGE THIS TO "no" AFTER GENERATING YOUR KEY
   "mysql": {
     "host": "HOST",
     "user": "USER",
